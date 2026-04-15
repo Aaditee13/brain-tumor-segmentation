@@ -24,10 +24,11 @@ BraTS 2020 dataset, spanning classical, energy-based, and deep learning approach
 
 ## Key Contribution
 
-**PyramidUNet** augments the U-Net bottleneck with a **Pyramid Pooling Module (PPM)**
-that captures global context at 4 spatial scales simultaneously, addressing the
-single-scale limitation of standard encoder-decoders.
-
+1.Comprehensive comparative analysis of classical (Otsu Thresholding, K-Means Clustering), semi-automatic (Active Contour), and deep learning-based (U-Net, Pyramid U-Net) methods for brain tumor segmentation on the BraTS 2020 dataset.
+2.Systematic evaluation using multiple performance metrics, including Dice coefficient, IoU, Precision, Recall, and Hausdorff distance, providing both region-based and boundary-level assessment.
+3.Investigation of explicit multi-scale feature integration through a Pyramid U-Net variant, incorporating Gaussian pyramid representations at the bottleneck to analyze their impact on segmentation performance.
+4.Critical analysis of model behavior, demonstrating that while deep learning methods significantly outperform classical approaches, additional architectural complexity (Pyramid U-Net) does not necessarily yield performance gains over the baseline U-Net.
+5.Clinically relevant evaluation, showing that deep learning models achieve boundary accuracy within ±2 mm, making them suitable for applications such as surgical planning and radiation therapy.
 ---
 
 ## Repository Structure
